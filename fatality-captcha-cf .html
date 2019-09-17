@@ -1,0 +1,184 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="data:image/x-icon;base64,AAABAAEAEBAAAAEACABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAABADXgAWgbuAD4YHQBDGiAAXgjqAEQaIABhCegAQQ13ADITGABCGh8AQxofAG4PzgBBElgAhxfGAGIJ5wA8C2YAZwvjAEYUTQBNDJsANg49ACsRFABEDnQAVA+VAFMWUABXFlcAYBZsAEsRbgBFFEUAdxO+AEwRYAA7FxwANhUZADwXHABCDXUAQRkfAEIZHwBHD3EASRBvAEANYABaEYkASBBhAGsM3wA8ETwAbQ3dAEAZHgBFGyEAcA7bAEEZHgBGGyEAQBI6AHQQ1wBFDnIAhBizAC8SFgBlFYcARRsgAEgKogB6EtIAdRLEAFwRjgBWBfEAPxgeAGsN1ABAFSsAQQmBAIIXugBVFlMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwLSIgPTcwMDAwMDAwMDAwMAURJxsiMDAwMDAwMDAwMDAKGjIdAjAwMDAwMDAwMDAwCSUuKCAFLTAwMDAwMDAwMAkkKSYUCB4FMDAwMDAwMDAJMxALHDRCLDAwMDAwMDAwCRUOPjpBGCIwMDAwMDAwMAkhBA81Hx4jLTAwMDAwMDAJBwFAEyoxPyMwMDAwMDAwAwA8Bis5DRkCMDAwMDAwMAUMOBIWOzYXIjAwMDAwMDAwBSIsLCwvCi0wMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=" />
+    <title> Cloudflare | Fatality</title>
+    <style>
+        @keyframes uk-text-shadow-glitch {
+            0% {
+                text-shadow: none;
+            }
+
+            25% {
+                text-shadow: -2px -2px 0 #eb055a, 2px 2px 0 #4632f0;
+            }
+
+            50% {
+                text-shadow: 2px -2px 0 #eb055a, -2px 2px 0 #4632f0;
+            }
+
+            75% {
+                text-shadow: -2px 2px 0 #eb055a, 2px -2px 0 #4632f0;
+            }
+
+            100% {
+                text-shadow: 2px 2px 0 #eb055a, -2px -2px 0 #4632f0;
+            }
+        }
+
+        @font-face {
+            font-family: "Josefin Sans";
+            src: url("https://fonts.gstatic.com/s/josefinsans/v14/Qw3aZQNVED7rKGKxtqIqX5EUDXx4.woff2")
+        }
+
+        body {
+            margin: 0px;
+            padding: 0px;
+            overflow: hidden;
+            font-family: Helvetica, Arial, sans-serif;
+        }
+
+        .p-guest--message {
+            width: 100%;
+            text-align: center;
+            margin: 6% auto 5%
+        }
+
+        .p-guest--message--inner {
+            max-width: 1260px;
+            padding: 20px 10px;
+            margin: 0 auto
+        }
+
+        .p-guest--message h1 {
+            animation: uk-text-shadow-glitch .65s cubic-bezier(.25, .46, .45, .9399999999999999) both infinite;
+            font-family: 'Josefin Sans', 'Helvetica Neue', Helvetica, Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', sans-serif;
+            width: 100%;
+            max-width: 750px;
+            color: #fff;
+            font-weight: 700;
+            text-transform: uppercase;
+            line-height: 1.2;
+            letter-spacing: 4px;
+            margin: 0 auto;
+            font-size: 68px;
+        }
+
+        @media screen and (max-width: 900px) {
+            .p-guest--message h1 {
+                font-size: 36px;
+            }
+        }
+
+        .p-pageWrapper {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background: #0e0061 url(https://i.imgur.com/hJe3BIW.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+            border-top: 6px solid transparent;
+            border-image: linear-gradient(90deg, #4632f0, #eb055a) 1;
+        }
+
+        #cf-content {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+            font-family: "Josefin Sans", "Helvetica Neue", Helvetica, Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", sans-serif;
+            'Josefin Sans',
+            'Helvetica Neue',
+            Helvetica,
+            Roboto,
+            Oxygen,
+            Ubuntu,
+            Cantarell,
+            'Fira Sans',
+            'Droid Sans',
+            sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        #cf-content h1 {
+            animation: uk-text-shadow-glitch .65s cubic-bezier(.25, .46, .45, .9399999999999999) both infinite;
+            < !--font-family: Helvetica, Arial, sans-serif;
+            -->font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        #cf-content p {
+            font-size: 1em;
+            margin: 10px 0 0 0;
+        }
+
+        #spinner {
+            margin: 0 auto 30px auto;
+            display: block;
+        }
+
+        @-webkit-keyframes bubbles {
+            33%: {
+                -webkit-transform: translateY(10px);
+                transform: translateY(10px);
+            }
+
+            66% {
+                -webkit-transform: translateY(-10px);
+                transform: translateY(-10px);
+            }
+
+            100% {
+                -webkit-transform: translateY(0);
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes bubbles {
+            33%: {
+                -webkit-transform: translateY(10px);
+                transform: translateY(10px);
+            }
+
+            66% {
+                -webkit-transform: translateY(-10px);
+                transform: translateY(-10px);
+            }
+
+            100% {
+                -webkit-transform: translateY(0);
+                transform: translateY(0);
+            }
+        }
+
+        .bubbles {
+            background-color: white;
+            width: 15px;
+            height: 15px;
+            margin: 2px;
+            border-radius: 100%;
+            -webkit-animation: bubbles 0.6s 0.07s infinite ease-in-out;
+            animation: bubbles 0.6s 0.07s infinite ease-in-out;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="p-pageWrapper">
+        <div class="p-guest--message">
+            <div class="p-guest--message--inner">
+            </div>
+        </div>
+    </div>::CAPTCHA_BOX::
+</body></html>
